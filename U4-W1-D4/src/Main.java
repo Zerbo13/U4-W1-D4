@@ -1,15 +1,48 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import entities.ElementoMultimediale;
+import entities.Audio;
+import entities.Video;
+import entities.Immagine;
+import entities.Riproducibile;
+import entities.Luminosita;
+import entities.ArrayClass;
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        String titolo;
+        int durataInSec;
+        ArrayClass a = new ArrayClass();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        Scanner scanner = new Scanner(System.in);
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Inserisci il titolo: ");
+            titolo = scanner.nextLine();
+
+            System.out.println("1 Video, 2 Audio, 3 Immagine");
+            int num = scanner.nextInt();
+            switch (num){
+                case 1 : {
+                    System.out.println("Inserisci la durata del video: ");
+                    durataInSec = scanner.nextInt();
+                    break;
+                }
+
+                case 2 : {
+                    System.out.println("Inserisci la durata dell'audio: ");
+                    durataInSec = scanner.nextInt();
+                    break;
+                }
+
+                case 3 : {
+                    break;
+                }
+
+                default : {
+                    System.out.println("Numero inserito errato!");
+                }
+            }
+        }
         }
     }
-}
