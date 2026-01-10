@@ -2,7 +2,7 @@ package entities;
 
 public class Video extends ElementoMultimediale implements Riproducibile, Luminosita{
     private int durataInSec;
-    private int volume = 50;
+    private int volume;
     private int luminosita = 50;
 
     public Video(String titolo, int durata, int volume, int luminosita){

@@ -2,7 +2,7 @@ package entities;
 
 public class Audio extends ElementoMultimediale implements Riproducibile{
     private int durataInSec;
-    private int volume = 50;
+    private int volume;
 
     public Audio(String titolo, int durata, int volume){
         super(titolo);

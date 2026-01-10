@@ -1,7 +1,7 @@
 package entities;
 
 public class Immagine extends ElementoMultimediale implements Luminosita{
-    private int luminosita = 50;
+    private int luminosita;
 
     public Immagine(String titolo, int luminosita){
         super(titolo);
